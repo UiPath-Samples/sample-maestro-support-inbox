@@ -1,0 +1,6 @@
+date,invoice,item,quantity,unit_price,amount,status
+2026-10-01,INV-2026-10-0102,"Starter plan, monthly",1,19.00,19.00,paid
+2026-10-20,INV-2026-10-0377,"Upgrade to Team, prorated (Oct 20-31)",1,23.23,23.23,paid
+2026-11-01,INV-2026-11-0012,"Team plan, monthly",1,79.00,79.00,paid
+2026-11-05,INV-2026-11-0098,"Extra build minutes pack (1,000 min)",1,12.00,12.00,paid
+2026-11-05,INV-2026-11-0099,"Extra build minutes pack (1,000 min)",1,12.00,12.00,paid

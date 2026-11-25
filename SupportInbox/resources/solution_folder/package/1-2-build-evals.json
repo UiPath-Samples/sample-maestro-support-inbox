@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "1-2-build-evals",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "ca30c8b0-33b0-4812-b1ba-7eb07f3e681b",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "1-2-build-evals"
+    },
+    "locks": [],
+    "key": "b96779d9-54f3-4219-b764-38ed5f34e627",
+    "files": []
+  }
+}

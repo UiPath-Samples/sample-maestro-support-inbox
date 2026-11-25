@@ -1,0 +1,24 @@
+{
+  "id": "E11",
+  "received": "2026-11-13T09:02:00-05:00",
+  "from": {
+    "name": "Jun Park",
+    "email": "jun@fieldnote.example"
+  },
+  "subject": "fernway logs --follow keeps dropping",
+  "body": "Hey,\n\n`fernway logs --follow` disconnects after about 60 seconds with \"stream closed\". CLI 3.4.1 on macOS. Happens on every app.\n\nJun",
+  "attachments": [],
+  "expected": {
+    "category": "bug",
+    "account_id": null,
+    "amount": null,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "acknowledges the log stream disconnects",
+      "references CLI 3.4.1"
+    ],
+    "policy_points": []
+  }
+}

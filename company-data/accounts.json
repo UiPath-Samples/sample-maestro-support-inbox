@@ -1,0 +1,689 @@
+[
+  {
+    "id": "FW-10008",
+    "company": "Halvorsen Freight",
+    "contact": "Ingrid Halvorsen",
+    "email": "ingrid@halvorsenfreight.example",
+    "plan": "Business",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2024-03-11",
+    "monthly_price": 249.0,
+    "payment_method": "card ending 7731",
+    "charges": [
+      {
+        "date": "2026-10-03",
+        "invoice": "INV-2026-10-0031",
+        "description": "Business plan, monthly",
+        "amount": 249.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-03",
+        "invoice": "INV-2026-11-0044",
+        "description": "Business plan, monthly",
+        "amount": 249.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-03",
+        "invoice": "INV-2026-11-0045",
+        "description": "Business plan, monthly",
+        "amount": 249.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10012",
+    "company": "Quarry Lane Studio",
+    "contact": "Dev Raman",
+    "email": "dev@quarrylane.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-06-02",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 5520",
+    "charges": [
+      {
+        "date": "2026-10-01",
+        "invoice": "INV-2026-10-0102",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-10-20",
+        "invoice": "INV-2026-10-0377",
+        "description": "Upgrade to Team, prorated (Oct 20-31)",
+        "amount": 23.23,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0012",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-05",
+        "invoice": "INV-2026-11-0098",
+        "description": "Extra build minutes pack (1,000 min)",
+        "amount": 12.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-05",
+        "invoice": "INV-2026-11-0099",
+        "description": "Extra build minutes pack (1,000 min)",
+        "amount": 12.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10015",
+    "company": "Brightloaf Bakery",
+    "contact": "Maya Okafor",
+    "email": "maya@brightloaf.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-09-14",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 0412",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0021",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10017",
+    "company": "Sunpath Solar",
+    "contact": "Diego Alvarez",
+    "email": "diego@sunpathsolar.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2024-11-30",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 8814",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0023",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10019",
+    "company": "Corvid Analytics",
+    "contact": "Sam Whitfield",
+    "email": "sam@corvidanalytics.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-01-08",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 2290",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0026",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10021",
+    "company": "Tessellate Games",
+    "contact": "Lena Fischer",
+    "email": "lena@tessellate.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2026-02-17",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 6403",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0028",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10023",
+    "company": "Marigold Tutoring",
+    "contact": "Priya Nair",
+    "email": "priya@marigoldtutoring.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-08-05",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 1187",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0031",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0032",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10025",
+    "company": "Ironbark Coffee",
+    "contact": "Zoe Turner",
+    "email": "zoe@ironbarkcoffee.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2026-05-22",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 9045",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0034",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10027",
+    "company": "Lumen & Lathe",
+    "contact": "Oscar Brandt",
+    "email": "oscar@lumenlathe.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-04-19",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 3376",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0037",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0037",
+        "description": "Bandwidth overage, 577.5 GB at $0.08/GB (October)",
+        "amount": 46.2,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10030",
+    "company": "Kestrel Robotics Club",
+    "contact": "Aisha Bello",
+    "email": "aisha@kestrelrobotics.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-10-02",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 4761",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0041",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10031",
+    "company": "Oakmere Legal",
+    "contact": "Hannah Cole",
+    "email": "hannah@oakmerelegal.example",
+    "plan": "Business",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2024-07-15",
+    "monthly_price": 249.0,
+    "payment_method": "card ending 5058",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0042",
+        "description": "Business plan, monthly",
+        "amount": 249.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10034",
+    "company": "Riverstone Clinic",
+    "contact": "Marco Silva",
+    "email": "marco@riverstoneclinic.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-02-27",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 7120",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0047",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10036",
+    "company": "Fieldnote Apps",
+    "contact": "Jun Park",
+    "email": "jun@fieldnote.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2026-01-12",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 2843",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0050",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10038",
+    "company": "Copperleaf Books",
+    "contact": "Grace Liu",
+    "email": "grace@copperleafbooks.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-11-03",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 6619",
+    "charges": [
+      {
+        "date": "2026-10-03",
+        "invoice": "INV-2026-10-0058",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-03",
+        "invoice": "INV-2026-11-0058",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10041",
+    "company": "Saltmarsh Media",
+    "contact": "Tomas Rivera",
+    "email": "tomas@saltmarsh.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "cancelled",
+    "cancelled_on": "2026-10-28",
+    "created": "2025-03-17",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 3108",
+    "charges": [
+      {
+        "date": "2026-10-01",
+        "invoice": "INV-2026-10-0066",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0187",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10044",
+    "company": "Hollow Oak Games",
+    "contact": "Ruth Adeyemi",
+    "email": "ruth@hollowoak.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "past_due",
+    "created": "2025-12-01",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 0119",
+    "charges": [
+      {
+        "date": "2026-10-01",
+        "invoice": "INV-2026-10-0071",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0190",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "id": "FW-10045",
+    "company": "Pixelmoss",
+    "contact": "Felix Moreau",
+    "email": "felix@pixelmoss.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-03-03",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 8862",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0063",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0063",
+        "description": "Bandwidth overage, 1,500 GB at $0.08/GB (October)",
+        "amount": 120.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10048",
+    "company": "Larkhill Events",
+    "contact": "Ama Mensah",
+    "email": "ama@larkhillevents.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-12-09",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 4407",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0068",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10049",
+    "company": "Driftwood Data",
+    "contact": "Nadia Haddad",
+    "email": "nadia@driftwooddata.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-07-21",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 9931",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0069",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-10",
+        "invoice": "INV-2026-11-0233",
+        "description": "Build minutes overage, 1,900 min at $0.02/min (Nov 9-10)",
+        "amount": 38.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10052",
+    "company": "Glasshouse Co",
+    "contact": "Rex Calloway",
+    "email": "rex@glasshouse.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2026-09-30",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 1450",
+    "charges": [
+      {
+        "date": "2026-10-01",
+        "invoice": "INV-2026-10-0080",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      },
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0072",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10055",
+    "company": "Amberline Logistics",
+    "contact": "Chen Wei",
+    "email": "chen@amberline.example",
+    "plan": "Business",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2024-05-06",
+    "monthly_price": 249.0,
+    "payment_method": "card ending 6672",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0075",
+        "description": "Business plan, monthly",
+        "amount": 249.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10057",
+    "company": "Bluefin Tutors",
+    "contact": "Olivia Grant",
+    "email": "olivia@bluefintutors.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-10-18",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 3015",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0078",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10059",
+    "company": "Wrenfield Outdoor",
+    "contact": "Kai Nakamura",
+    "email": "kai@wrenfield.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-05-25",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 5284",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0081",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10061",
+    "company": "Cobalt Kitchen",
+    "contact": "Ravi Shah",
+    "email": "ravi@cobaltkitchen.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2026-03-08",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 7746",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0083",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10063",
+    "company": "Moonrise Yoga",
+    "contact": "Elena Petrova",
+    "email": "elena@moonriseyoga.example",
+    "plan": "Starter",
+    "cycle": "annual",
+    "status": "active",
+    "created": "2025-08-29",
+    "monthly_price": 190.0,
+    "payment_method": "card ending 2208",
+    "charges": [
+      {
+        "date": "2026-08-29",
+        "invoice": "INV-2026-08-0412",
+        "description": "Starter plan, annual (Aug 29, 2026 - Aug 28, 2027)",
+        "amount": 190.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10066",
+    "company": "Tallgrass Software",
+    "contact": "Ben Okoro",
+    "email": "ben@tallgrass.example",
+    "plan": "Team",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2025-09-01",
+    "monthly_price": 79.0,
+    "payment_method": "card ending 8390",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0086",
+        "description": "Team plan, monthly",
+        "amount": 79.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10070",
+    "company": "Ridgeway Insurance Group",
+    "contact": "Laura Kim",
+    "email": "laura@ridgewayins.example",
+    "plan": "Business",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2024-10-10",
+    "monthly_price": 249.0,
+    "payment_method": "card ending 4129",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0090",
+        "description": "Business plan, monthly",
+        "amount": 249.0,
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "id": "FW-10074",
+    "company": "Luma Ceramics",
+    "contact": "Sofia Marin",
+    "email": "sofia@lumaceramics.example",
+    "plan": "Starter",
+    "cycle": "monthly",
+    "status": "active",
+    "created": "2026-06-14",
+    "monthly_price": 19.0,
+    "payment_method": "card ending 6051",
+    "charges": [
+      {
+        "date": "2026-11-01",
+        "invoice": "INV-2026-11-0093",
+        "description": "Starter plan, monthly",
+        "amount": 19.0,
+        "status": "paid"
+      }
+    ]
+  }
+]

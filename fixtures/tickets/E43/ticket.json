@@ -1,0 +1,30 @@
+{
+  "id": "E43",
+  "received": "2026-11-16T10:31:00-05:00",
+  "from": {
+    "name": "Kai Nakamura",
+    "email": "kai@wrenfield.example"
+  },
+  "subject": "Is this right?",
+  "body": "Usage spiked this week. Is this right?\n\nKai",
+  "attachments": [
+    {
+      "file": "tickets/E43/image (1).png",
+      "kind": "screenshot",
+      "content_type": "image/png"
+    }
+  ],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10059",
+    "amount": 62.4,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "explains the projected $62.40 bandwidth overage",
+      "mentions the 500 GB included in the plan"
+    ],
+    "policy_points": []
+  }
+}

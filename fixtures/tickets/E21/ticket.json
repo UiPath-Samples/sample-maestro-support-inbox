@@ -1,0 +1,24 @@
+{
+  "id": "E21",
+  "received": "2026-11-15T12:03:00-05:00",
+  "from": {
+    "name": "Chen Wei",
+    "email": "chen@amberline.example"
+  },
+  "subject": "Export logs",
+  "body": "Hi,\n\nCan we ship our app logs to S3 or Datadog? We need to keep them for a year.\n\nChen Wei\nAmberline Logistics",
+  "attachments": [],
+  "expected": {
+    "category": "how-to",
+    "account_id": null,
+    "amount": null,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "explains how to export logs",
+      "addresses one-year retention"
+    ],
+    "policy_points": []
+  }
+}

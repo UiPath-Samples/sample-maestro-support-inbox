@@ -1,0 +1,20 @@
+2026-11-14T16:20:03Z [build]  Fernway build runner 3.4.1  app=fieldnote-api  account=FW-10036
+2026-11-14T16:20:04Z [build]  Cloning main @ 7c4d2e1 "Add export endpoint"
+2026-11-14T16:20:09Z [build]  Detected Node.js 20.18.0 (package.json engines)
+2026-11-14T16:20:10Z [build]  $ npm ci
+2026-11-14T16:20:41Z [build]  added 412 packages in 30s
+2026-11-14T16:20:42Z [build]  $ npm run build
+2026-11-14T16:21:15Z [build]  Build succeeded in 33s
+2026-11-14T16:21:16Z [deploy] Starting release r-0192 (previous: r-0191)
+2026-11-14T16:21:16Z [deploy] Health check: GET http://10.0.4.17:3000/healthz every 10s, timeout 300s
+2026-11-14T16:21:19Z [app]    > fieldnote-api@2.3.0 start
+2026-11-14T16:21:19Z [app]    > node dist/server.js
+2026-11-14T16:21:20Z [app]    Server listening on http://0.0.0.0:8080
+2026-11-14T16:21:26Z [deploy] Health check attempt 1/30: connection refused (10.0.4.17:3000)
+2026-11-14T16:21:36Z [deploy] Health check attempt 2/30: connection refused (10.0.4.17:3000)
+2026-11-14T16:21:46Z [deploy] Health check attempt 3/30: connection refused (10.0.4.17:3000)
+2026-11-14T16:22:56Z [deploy] Health check attempts 4-10/30: connection refused (10.0.4.17:3000)
+2026-11-14T16:24:06Z [app]    GET /healthz 200 2ms (from 10.0.4.17:8080, internal probe)
+2026-11-14T16:26:16Z [deploy] Health check attempts 11-30/30: connection refused (10.0.4.17:3000)
+2026-11-14T16:26:16Z [deploy] ERROR E1042 DEPLOY_TIMEOUT: release r-0192 did not pass health checks within 300s
+2026-11-14T16:26:17Z [deploy] Rolled back to r-0191

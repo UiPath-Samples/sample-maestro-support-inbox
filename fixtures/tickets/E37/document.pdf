@@ -1,0 +1,71 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 2174 >>
+stream
+0.13 0.42 0.36 rg 0 786 612 6 re f
+BT /F2 24 Tf 0.12 0.14 0.16 rg 54.00 728.00 Td (Fernway) Tj ET
+BT /F1 9 Tf 0.12 0.14 0.16 rg 54.00 712.00 Td (fernway.example  |  billing@fernway.example) Tj ET
+BT /F2 20 Tf 0.12 0.14 0.16 rg 456.92 728.00 Td (INVOICE) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 472.40 712.00 Td (INV-2026-11-0047) Tj ET
+BT /F2 9 Tf 0.12 0.14 0.16 rg 54.00 662.00 Td (Bill to) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 54.00 646.00 Td (Riverstone Clinic) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 54.00 632.00 Td (Marco Silva) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 54.00 618.00 Td (marco@riverstoneclinic.example) Tj ET
+BT /F2 9 Tf 0.12 0.14 0.16 rg 380.00 646.00 Td (Invoice date) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 506.86 646.00 Td (2026-11-01) Tj ET
+BT /F2 9 Tf 0.12 0.14 0.16 rg 380.00 632.00 Td (Account ID) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 513.53 632.00 Td (FW-10034) Tj ET
+BT /F2 9 Tf 0.12 0.14 0.16 rg 380.00 618.00 Td (Plan) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 486.29 618.00 Td (Team \(monthly\)) Tj ET
+0.93 0.95 0.94 rg 54 556 504 20 re f
+BT /F2 9 Tf 0.12 0.14 0.16 rg 62.00 562.00 Td (Description) Tj ET
+BT /F2 9 Tf 0.12 0.14 0.16 rg 516.01 562.00 Td (Amount) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 62.00 538.00 Td (Team plan, monthly) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 519.42 538.00 Td ($79.00) Tj ET
+0.4 w 0.75 0.78 0.80 RG 54 531 m 558 531 l S
+BT /F1 10 Tf 0.12 0.14 0.16 rg 440.00 502.00 Td (Subtotal) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 519.42 502.00 Td ($79.00) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 440.00 486.00 Td (Tax) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 524.98 486.00 Td ($0.00) Tj ET
+0.8 w 0.75 0.78 0.80 RG 430 478 m 558 478 l S
+BT /F2 11 Tf 0.12 0.14 0.16 rg 440.00 462.00 Td (Total) Tj ET
+BT /F2 11 Tf 0.12 0.14 0.16 rg 516.36 462.00 Td ($79.00) Tj ET
+BT /F1 10 Tf 0.12 0.14 0.16 rg 54.00 422.00 Td (Paid by card ending 7120 on 2026-11-01.) Tj ET
+0.4 w 0.75 0.78 0.80 RG 54 72 m 558 72 l S
+BT /F1 8 Tf 0.12 0.14 0.16 rg 54.00 54.00 Td (Questions about this document? Reply to this email or contact support@fernway.example.) Tj ET
+BT /F1 8 Tf 0.12 0.14 0.16 rg 54.00 42.00 Td (Fernway is a fictional company used in a UiPath sample.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Producer (build_fixtures.py) >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000348 00000 n 
+0000000450 00000 n 
+0000002676 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R /Info 7 0 R >>
+startxref
+2727
+%%EOF

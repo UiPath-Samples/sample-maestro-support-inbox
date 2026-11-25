@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1",
+  "bindings": [
+    {
+      "id": "slack",
+      "name": "slack",
+      "resource": "Connection",
+      "resourceKey": "5ad1820c-70e9-4750-b25e-e2cd028b6c7f",
+      "default": "5ad1820c-70e9-4750-b25e-e2cd028b6c7f",
+      "propertyAttribute": "ConnectionId"
+    },
+    {
+      "id": "shared",
+      "name": "shared",
+      "resource": "Connection",
+      "resourceKey": "e52f05df-eac6-4f5e-b25d-ebd56830d665",
+      "default": "e52f05df-eac6-4f5e-b25d-ebd56830d665",
+      "propertyAttribute": "FolderKey"
+    },
+    {
+      "id": "jira",
+      "name": "jira",
+      "resource": "Connection",
+      "resourceKey": "3a1fd879-252e-4f03-a20d-1a5a5ee539ef",
+      "default": "3a1fd879-252e-4f03-a20d-1a5a5ee539ef",
+      "propertyAttribute": "ConnectionId"
+    },
+    {
+      "id": "gmail",
+      "name": "gmail",
+      "resource": "Connection",
+      "resourceKey": "593b14fc-f445-4c6a-89b7-016833566cab",
+      "default": "593b14fc-f445-4c6a-89b7-016833566cab",
+      "propertyAttribute": "ConnectionId"
+    }
+  ]
+}

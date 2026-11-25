@@ -1,0 +1,38 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "2-2-auto-approvals",
+    "kind": "process",
+    "type": "flow",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "e66c468b-d7fe-4b05-9bf4-01919ac9e4dd",
+    "dependencies": [
+      {
+        "kind": "package",
+        "name": "2-2-auto-approvals"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "runtimeProfile": "Standard",
+      "type": "Flow",
+      "name": "2-2-auto-approvals",
+      "package": {
+        "key": "ccad7097-8e1f-43e4-8f2f-26525e22dcac"
+      },
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180
+    },
+    "locks": [],
+    "key": "7e85f754-53be-42b4-8afa-eeaae2f7e69c",
+    "files": []
+  }
+}

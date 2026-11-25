@@ -1,0 +1,25 @@
+{
+  "id": "E06",
+  "received": "2026-11-11T15:05:00-05:00",
+  "from": {
+    "name": "Dev Raman",
+    "email": "dev@quarrylane.example"
+  },
+  "subject": "Why did our bill go up?",
+  "body": "Hi,\n\nOur bill went from $19 to $79 this month. Did something change? Account FW-10012.\n\nDev",
+  "attachments": [],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10012",
+    "amount": 79.0,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "addresses the change from $19 to $79"
+    ],
+    "policy_points": [
+      "explains the account was upgraded to Team on October 20"
+    ]
+  }
+}

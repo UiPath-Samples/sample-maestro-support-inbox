@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "2-2-auto-approvals",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "e66c468b-d7fe-4b05-9bf4-01919ac9e4dd",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "2-2-auto-approvals"
+    },
+    "locks": [],
+    "key": "ccad7097-8e1f-43e4-8f2f-26525e22dcac",
+    "files": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "E44",
+  "received": "2026-11-16T14:14:00-05:00",
+  "from": {
+    "name": "Lena Fischer",
+    "email": "lena@tessellate.example"
+  },
+  "subject": "How do I turn this on?",
+  "body": "How do I turn this on?\n\nLena",
+  "attachments": [
+    {
+      "file": "tickets/E44/Screenshot 2026-11-16 at 2.13.30 PM.png",
+      "kind": "screenshot",
+      "content_type": "image/png"
+    }
+  ],
+  "expected": {
+    "category": "how-to",
+    "account_id": "FW-10021",
+    "amount": null,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "explains preview deployments need the Team or Business plan",
+      "notes the account is on Starter"
+    ],
+    "policy_points": []
+  }
+}

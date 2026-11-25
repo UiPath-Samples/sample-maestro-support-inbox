@@ -1,0 +1,28 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Jira (Support)",
+    "kind": "connection",
+    "type": "uipath-atlassian-jira",
+    "apiVersion": "integrationservice.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "connectorName": "Jira",
+      "name": "Jira (Support)",
+      "authenticationType": "AuthenticateAfterDeployment",
+      "connectorVersion": "1.14.0",
+      "connectorKey": "uipath-atlassian-jira",
+      "pollingInterval": 5
+    },
+    "locks": [],
+    "key": "3a1fd879-252e-4f03-a20d-1a5a5ee539ef",
+    "files": []
+  }
+}

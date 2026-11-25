@@ -1,0 +1,12 @@
+Webhook: wh_31f0  Account: FW-10030  App: kestrel-scoreboard
+Endpoint: https://hooks.kestrelrobotics.example/fernway
+
+delivery_id   time (UTC)            event               status  response      attempt
+dlv_9a01e2    2026-11-16 14:02:11   deploy.succeeded    failed  410 Gone      1/5
+dlv_9a01e2    2026-11-16 14:03:11   deploy.succeeded    failed  410 Gone      2/5
+dlv_9a01e2    2026-11-16 14:07:11   deploy.succeeded    failed  410 Gone      3/5
+dlv_9a01e2    2026-11-16 14:22:11   deploy.succeeded    failed  410 Gone      4/5
+dlv_9a01e2    2026-11-16 15:22:11   deploy.succeeded    failed  410 Gone      5/5
+
+E7041 WEBHOOK_DELIVERY_FAILED: endpoint returned 410 Gone on 5 attempts.
+Webhook wh_31f0 was disabled. Fix the endpoint, then re-enable it in Settings > Webhooks.

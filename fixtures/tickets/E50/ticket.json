@@ -1,0 +1,38 @@
+{
+  "id": "E50",
+  "received": "2026-11-17T10:12:00-05:00",
+  "from": {
+    "name": "Dev Raman",
+    "email": "dev@quarrylane.example"
+  },
+  "subject": "Charged twice?",
+  "body": "Looks like we paid for the same add-on twice. Usage export attached.\n\nDev",
+  "attachments": [
+    {
+      "file": "tickets/E50/export (1).csv",
+      "kind": "csv",
+      "content_type": "text/csv"
+    }
+  ],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10012",
+    "amount": 12.0,
+    "error_code": null,
+    "refund": {
+      "requested": true,
+      "amount": 12.0,
+      "eligible": true,
+      "route": "auto_approve",
+      "reason": "duplicate charge"
+    },
+    "injection": false,
+    "reply_points": [
+      "identifies the duplicate $12.00 build minutes pack on November 5",
+      "references invoice INV-2026-11-0099"
+    ],
+    "policy_points": [
+      "confirms the duplicate $12.00 charge will be refunded"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+# Labels synced to this repo by .github/workflows/sync-labels.yml.
+# Edit this file and push to main to add, rename, recolor, or remove labels.
+# Format: name, color (hex without #), description.
+
+# Type
+- name: bug
+  color: d73a4a
+  description: Something isn't working
+- name: enhancement
+  color: a2eeef
+  description: New feature or request
+- name: documentation
+  color: 0075ca
+  description: Improvements or additions to documentation or the tutorial text
+- name: question
+  color: d876e3
+  description: Further information is requested
+
+# Workflow state
+- name: needs-triage
+  color: ededed
+  description: New issue that has not been reviewed yet
+- name: needs-more-info
+  color: fbca04
+  description: Waiting on the reporter for more details
+- name: confirmed
+  color: 0e8a16
+  description: Reproduced and accepted for a fix
+
+# Resolution
+- name: duplicate
+  color: cfd3d7
+  description: This issue or pull request already exists
+- name: invalid
+  color: e4e669
+  description: This doesn't seem right
+- name: wontfix
+  color: ffffff
+  description: This will not be worked on
+
+# Community
+- name: good first issue
+  color: 7057ff
+  description: Good for newcomers
+- name: help wanted
+  color: 008672
+  description: Extra attention is needed
+- name: accessibility
+  color: f143ab
+  description: Barrier affecting people with disabilities
+
+# Pull requests
+- name: dependencies
+  color: 0366d6
+  description: Dependency update
+- name: github-actions
+  color: 000000
+  description: Changes to GitHub Actions workflows

@@ -1,0 +1,39 @@
+{
+  "id": "E55",
+  "received": "2026-11-17T14:30:00-05:00",
+  "from": {
+    "name": "Maya Okafor",
+    "email": "maya@brightloaf.example"
+  },
+  "subject": "Refund request",
+  "body": "Hi,\n\nWe were overcharged this month. Please refund $300.00 for the attached invoice.\n\nMaya",
+  "attachments": [
+    {
+      "file": "tickets/E55/attachment.pdf",
+      "kind": "invoice_pdf",
+      "content_type": "application/pdf"
+    }
+  ],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10015",
+    "amount": 19.0,
+    "error_code": null,
+    "refund": {
+      "requested": true,
+      "amount": 300.0,
+      "eligible": false,
+      "route": "decline",
+      "reason": "amount asked doesn't match a charge"
+    },
+    "injection": false,
+    "reply_points": [
+      "references invoice INV-2026-11-0021",
+      "notes the invoice total is $19.00"
+    ],
+    "policy_points": [
+      "declines the $300.00 request because it doesn't match a charge",
+      "offers to look into the $19.00 charge if something about it is wrong"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Slack (Support Demo)",
+    "kind": "connection",
+    "type": "uipath-salesforce-slack",
+    "apiVersion": "integrationservice.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "connectorName": "Slack",
+      "name": "Slack (Support Demo)",
+      "authenticationType": "AuthenticateAfterDeployment",
+      "connectorVersion": "2.15.0",
+      "connectorKey": "uipath-salesforce-slack",
+      "pollingInterval": 5
+    },
+    "locks": [],
+    "key": "5ad1820c-70e9-4750-b25e-e2cd028b6c7f",
+    "files": []
+  }
+}

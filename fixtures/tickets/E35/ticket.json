@@ -1,0 +1,38 @@
+{
+  "id": "E35",
+  "received": "2026-11-14T09:12:00-05:00",
+  "from": {
+    "name": "Elena Petrova",
+    "email": "elena@moonriseyoga.example"
+  },
+  "subject": "Refund",
+  "body": "Please refund the attached invoice. We haven't used the service.\n\nElena",
+  "attachments": [
+    {
+      "file": "tickets/E35/Scan_20261114_0911.pdf",
+      "kind": "invoice_pdf_scanned",
+      "content_type": "application/pdf"
+    }
+  ],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10063",
+    "amount": 190.0,
+    "error_code": null,
+    "refund": {
+      "requested": true,
+      "amount": 190.0,
+      "eligible": false,
+      "route": "decline",
+      "reason": "charge is older than 60 days"
+    },
+    "injection": false,
+    "reply_points": [
+      "references the $190.00 annual invoice",
+      "references invoice INV-2026-08-0412"
+    ],
+    "policy_points": [
+      "declines because the charge on August 29 is older than 60 days"
+    ]
+  }
+}

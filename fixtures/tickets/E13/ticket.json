@@ -1,0 +1,24 @@
+{
+  "id": "E13",
+  "received": "2026-11-13T14:19:00-05:00",
+  "from": {
+    "name": "Diego Alvarez",
+    "email": "diego@sunpathsolar.example"
+  },
+  "subject": "GitLab pushes don't trigger deploys",
+  "body": "Hi,\n\nPushes to main on GitLab stopped triggering deploys on Monday. GitHub repos on the same account still work.\n\nDiego",
+  "attachments": [],
+  "expected": {
+    "category": "bug",
+    "account_id": null,
+    "amount": null,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "acknowledges GitLab pushes not triggering deploys",
+      "asks to check the webhook or gives a next step"
+    ],
+    "policy_points": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "E01",
+  "received": "2026-11-10T09:14:00-05:00",
+  "from": {
+    "name": "Priya Nair",
+    "email": "priya@marigoldtutoring.example"
+  },
+  "subject": "Charged twice this month",
+  "body": "Hi,\n\nI was charged $19 twice on November 1 for our Starter plan. Our account is FW-10023. Could you refund the duplicate?\n\nThanks,\nPriya",
+  "attachments": [],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10023",
+    "amount": 19.0,
+    "error_code": null,
+    "refund": {
+      "requested": true,
+      "amount": 19.0,
+      "eligible": true,
+      "route": "auto_approve",
+      "reason": "duplicate charge"
+    },
+    "injection": false,
+    "reply_points": [
+      "acknowledges the duplicate $19 charge",
+      "references account FW-10023"
+    ],
+    "policy_points": [
+      "confirms the duplicate charge INV-2026-11-0032 will be refunded"
+    ]
+  }
+}

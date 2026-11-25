@@ -1,0 +1,38 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "1-2-build-evals",
+    "kind": "process",
+    "type": "flow",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "ca30c8b0-33b0-4812-b1ba-7eb07f3e681b",
+    "dependencies": [
+      {
+        "kind": "package",
+        "name": "1-2-build-evals"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "runtimeProfile": "Standard",
+      "type": "Flow",
+      "name": "1-2-build-evals",
+      "package": {
+        "key": "b96779d9-54f3-4219-b764-38ed5f34e627"
+      },
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180
+    },
+    "locks": [],
+    "key": "e1c488d4-28cc-4931-b146-bdec7274d047",
+    "files": []
+  }
+}

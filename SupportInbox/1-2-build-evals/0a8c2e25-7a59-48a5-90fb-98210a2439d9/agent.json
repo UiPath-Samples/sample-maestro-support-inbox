@@ -1,0 +1,105 @@
+{
+  "version": "1.2.0",
+  "settings": {
+    "model": "claude-sonnet-5-5",
+    "maxTokens": 16384,
+    "temperature": 1,
+    "engine": "basic-v2",
+    "maxIterations": 25,
+    "mode": "standard"
+  },
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "getEmail__output__From__Name": {
+        "type": "string"
+      },
+      "getEmail__output__From__Email": {
+        "type": "string"
+      },
+      "getEmail__output__Subject": {
+        "type": "string"
+      },
+      "getEmail__output__Body": {
+        "type": "string"
+      }
+    }
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "replyText": {
+        "type": "string"
+      },
+      "refundRequested": {
+        "type": "boolean"
+      }
+    }
+  },
+  "metadata": {
+    "storageVersion": "50.0.0",
+    "isConversational": false,
+    "showProjectCreationExperience": false
+  },
+  "type": "lowCode",
+  "guardrails": [],
+  "messages": [
+    {
+      "role": "system",
+      "content": "You triage emails sent to a software company's customer support inbox.\nUse only the sender, subject and body you are given.\nReturn a result conforming to the output schema:\n- category: exactly one of billing | bug | how-to | other | spam.\n  billing = charges, invoices, refunds, plans, payment. bug = the product is broken or behaves wrongly.\n  how-to = the customer asks how to do something with the product. spam = unsolicited marketing, phishing, scams or mail not meant for support.\n  other = a genuine customer email that fits none of the above.\n- summary: one or two sentences for the support team describing what the customer wants.\n- replyText: a short, polite reply to the customer, signed 'Support team'. Acknowledge the request and say what happens next. Do not promise refunds, credits or fixes. For spam, return an empty string.\n- refundRequested: true only if the customer explicitly asks for a refund or money back; otherwise false.",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "You triage emails sent to a software company's customer support inbox.\nUse only the sender, subject and body you are given.\nReturn a result conforming to the output schema:\n- category: exactly one of billing | bug | how-to | other | spam.\n  billing = charges, invoices, refunds, plans, payment. bug = the product is broken or behaves wrongly.\n  how-to = the customer asks how to do something with the product. spam = unsolicited marketing, phishing, scams or mail not meant for support.\n  other = a genuine customer email that fits none of the above.\n- summary: one or two sentences for the support team describing what the customer wants.\n- replyText: a short, polite reply to the customer, signed 'Support team'. Acknowledge the request and say what happens next. Do not promise refunds, credits or fixes. For spam, return an empty string.\n- refundRequested: true only if the customer explicitly asks for a refund or money back; otherwise false."
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "From: {{input.getEmail__output__From__Name}} <{{input.getEmail__output__From__Email}}>\nSubject: {{input.getEmail__output__Subject}}\n\n{{input.getEmail__output__Body}}",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "From: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__From__Name"
+        },
+        {
+          "type": "simpleText",
+          "rawString": " <"
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__From__Email"
+        },
+        {
+          "type": "simpleText",
+          "rawString": ">\nSubject: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__Subject"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\n\n"
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__Body"
+        }
+      ]
+    }
+  ],
+  "projectId": "0a8c2e25-7a59-48a5-90fb-98210a2439d9",
+  "id": "0a8c2e25-7a59-48a5-90fb-98210a2439d9",
+  "name": "classify"
+}

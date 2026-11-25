@@ -1,0 +1,30 @@
+{
+  "id": "E49",
+  "received": "2026-11-17T07:41:00-05:00",
+  "from": {
+    "name": "Chen Wei",
+    "email": "chen@amberline.example"
+  },
+  "subject": "Is this normal?",
+  "body": "Seeing a lot of these. Log attached.\n\nChen",
+  "attachments": [
+    {
+      "file": "tickets/E49/log.txt",
+      "kind": "log",
+      "content_type": "text/plain"
+    }
+  ],
+  "expected": {
+    "category": "bug",
+    "account_id": "FW-10055",
+    "amount": null,
+    "error_code": "E4290",
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "references error E4290",
+      "explains the 20 requests per second burst limit"
+    ],
+    "policy_points": []
+  }
+}

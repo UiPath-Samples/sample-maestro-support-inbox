@@ -1,0 +1,30 @@
+{
+  "id": "E42",
+  "received": "2026-11-15T08:37:00-05:00",
+  "from": {
+    "name": "Sofia Marin",
+    "email": "sofia@lumaceramics.example"
+  },
+  "subject": "This is what I see",
+  "body": "This is what I see on the domains page.\n\nSofia",
+  "attachments": [
+    {
+      "file": "tickets/E42/Screenshot 2026-11-15 083512.png",
+      "kind": "screenshot",
+      "content_type": "image/png"
+    }
+  ],
+  "expected": {
+    "category": "bug",
+    "account_id": "FW-10074",
+    "amount": null,
+    "error_code": "E3105",
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "references error E3105",
+      "explains the missing TXT record for shop.lumaceramics.example"
+    ],
+    "policy_points": []
+  }
+}

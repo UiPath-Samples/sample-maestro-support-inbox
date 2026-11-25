@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "id": "reply-covers-expected-points-21ed5934",
+  "name": "Reply covers expected points",
+  "description": "LLM judge: does the reply text cover the ticket's expected reply points",
+  "evaluatorTypeId": "uipath-llm-judge-output-semantic-similarity",
+  "evaluatorConfig": {
+    "name": "Reply covers expected points",
+    "prompt": "You are grading a customer-support reply drafted by a workflow. ExpectedOutput lists the points a good reply must cover (or states that no reply is expected). Score 0-100: 100 when the actual reply covers every expected point accurately, partial credit for partial coverage, 0 when it covers none or contradicts them. If ExpectedOutput says no reply is expected, score 100 when the actual reply is empty, null or missing, and 0 when a reply was drafted. Ignore tone, length and extra polite wording. Give the score and a short justification.\n----\nExpectedOutput:\n{{ExpectedOutput}}\n----\nActualOutput:\n{{ActualOutput}}\n",
+    "temperature": 0,
+    "maxTokens": 8192,
+    "targetOutputKey": "replyText",
+    "model": "gpt-4.1-2025-04-14"
+  },
+  "fileName": "reply-covers-expected-points-21ed5934.json",
+  "createdAt": "2026-11-21T05:47:15.200Z",
+  "updatedAt": "2026-11-21T05:47:15.200Z"
+}

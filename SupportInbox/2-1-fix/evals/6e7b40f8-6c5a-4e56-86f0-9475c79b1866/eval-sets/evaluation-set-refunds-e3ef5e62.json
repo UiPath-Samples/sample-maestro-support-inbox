@@ -1,0 +1,592 @@
+{
+  "version": "1.0",
+  "id": "e3ef5e62-2305-44d1-a366-5544955671b6",
+  "name": "refunds",
+  "evaluatorRefs": [
+    "refund-decision-be272ab8"
+  ],
+  "evaluations": [
+    {
+      "id": "48a726e1-9194-4496-8f27-73e2a2a17983",
+      "name": "E01-billing",
+      "inputs": {
+        "messageId": "SEED-E01"
+      },
+      "expectedOutput": {
+        "category": "billing",
+        "replyText": "The reply should cover these points: (1) acknowledges the duplicate $19 charge; (2) references account FW-10023.",
+        "refundRequested": true
+      },
+      "evaluationCriterias": {
+        "refund-decision-be272ab8": {
+          "expectedOutput": {
+            "refund": {
+              "route": "auto_approve",
+              "reason": "duplicate charge"
+            }
+          }
+        }
+      },
+      "createdAt": "2026-11-21T05:49:34.906Z",
+      "updatedAt": "2026-11-21T05:49:40.998Z",
+      "simulations": [
+        {
+          "componentId": "ticketBilling",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketBug",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketHowTo",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketSpam",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketOther",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "attachToTicket",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "20000",
+              "filename": "attachment",
+              "size": 1
+            }
+          }
+        },
+        {
+          "componentId": "jiraSite",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "baseUrl": "https://example.atlassian.net",
+              "serverTitle": "Jira (eval)"
+            }
+          }
+        },
+        {
+          "componentId": "postSlack",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "ok": true,
+              "channel": "C0EVAL",
+              "ts": "1700000000.000100"
+            }
+          }
+        },
+        {
+          "componentId": "draftReply",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-draft-id",
+              "threadId": "eval-thread-id"
+            }
+          }
+        },
+        {
+          "componentId": "markRead",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-message-id",
+              "success": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "8ca4d9d5-fcee-4746-8c3d-041b64c33a64",
+      "name": "E29-billing",
+      "inputs": {
+        "messageId": "SEED-E29"
+      },
+      "expectedOutput": {
+        "category": "billing",
+        "replyText": "The reply should cover these points: (1) does not confirm a refund.",
+        "refundRequested": true
+      },
+      "evaluationCriterias": {
+        "refund-decision-be272ab8": {
+          "expectedOutput": {
+            "refund": {
+              "route": "decline",
+              "reason": "no matching charge; email instructions do not override policy"
+            }
+          }
+        }
+      },
+      "createdAt": "2026-11-21T05:49:41.597Z",
+      "updatedAt": "2026-11-21T05:49:48.182Z",
+      "simulations": [
+        {
+          "componentId": "ticketBilling",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketBug",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketHowTo",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketSpam",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketOther",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "attachToTicket",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "20000",
+              "filename": "attachment",
+              "size": 1
+            }
+          }
+        },
+        {
+          "componentId": "jiraSite",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "baseUrl": "https://example.atlassian.net",
+              "serverTitle": "Jira (eval)"
+            }
+          }
+        },
+        {
+          "componentId": "postSlack",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "ok": true,
+              "channel": "C0EVAL",
+              "ts": "1700000000.000100"
+            }
+          }
+        },
+        {
+          "componentId": "draftReply",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-draft-id",
+              "threadId": "eval-thread-id"
+            }
+          }
+        },
+        {
+          "componentId": "markRead",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-message-id",
+              "success": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "031f21b6-a8d2-419b-a620-0d5ffe9ff266",
+      "name": "E33-billing",
+      "inputs": {
+        "messageId": "SEED-E33"
+      },
+      "expectedOutput": {
+        "category": "billing",
+        "replyText": "The reply should cover these points: (1) references invoice INV-2026-11-0187; (2) acknowledges the $79.00 charge.",
+        "refundRequested": true
+      },
+      "evaluationCriterias": {
+        "refund-decision-be272ab8": {
+          "expectedOutput": {
+            "refund": {
+              "route": "human_approval",
+              "reason": "charged after cancellation"
+            }
+          }
+        }
+      },
+      "createdAt": "2026-11-21T05:49:48.850Z",
+      "updatedAt": "2026-11-21T05:49:56.368Z",
+      "simulations": [
+        {
+          "componentId": "ticketBilling",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketBug",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketHowTo",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketSpam",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketOther",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "attachToTicket",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "20000",
+              "filename": "attachment",
+              "size": 1
+            }
+          }
+        },
+        {
+          "componentId": "jiraSite",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "baseUrl": "https://example.atlassian.net",
+              "serverTitle": "Jira (eval)"
+            }
+          }
+        },
+        {
+          "componentId": "postSlack",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "ok": true,
+              "channel": "C0EVAL",
+              "ts": "1700000000.000100"
+            }
+          }
+        },
+        {
+          "componentId": "draftReply",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-draft-id",
+              "threadId": "eval-thread-id"
+            }
+          }
+        },
+        {
+          "componentId": "markRead",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-message-id",
+              "success": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "60278c90-b032-4c55-ad5f-5fe081048eda",
+      "name": "E35-billing",
+      "inputs": {
+        "messageId": "SEED-E35"
+      },
+      "expectedOutput": {
+        "category": "billing",
+        "replyText": "The reply should cover these points: (1) references the $190.00 annual invoice; (2) references invoice INV-2026-08-0412.",
+        "refundRequested": true
+      },
+      "evaluationCriterias": {
+        "refund-decision-be272ab8": {
+          "expectedOutput": {
+            "refund": {
+              "route": "decline",
+              "reason": "charge is older than 60 days"
+            }
+          }
+        }
+      },
+      "createdAt": "2026-11-21T05:49:57.029Z",
+      "updatedAt": "2026-11-21T05:50:03.956Z",
+      "simulations": [
+        {
+          "componentId": "ticketBilling",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketBug",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketHowTo",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketSpam",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "ticketOther",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "10000",
+              "key": "SUP-EVAL",
+              "self": "https://example.atlassian.net/rest/api/3/issue/10000"
+            }
+          }
+        },
+        {
+          "componentId": "attachToTicket",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "20000",
+              "filename": "attachment",
+              "size": 1
+            }
+          }
+        },
+        {
+          "componentId": "jiraSite",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "baseUrl": "https://example.atlassian.net",
+              "serverTitle": "Jira (eval)"
+            }
+          }
+        },
+        {
+          "componentId": "postSlack",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "ok": true,
+              "channel": "C0EVAL",
+              "ts": "1700000000.000100"
+            }
+          }
+        },
+        {
+          "componentId": "draftReply",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-draft-id",
+              "threadId": "eval-thread-id"
+            }
+          }
+        },
+        {
+          "componentId": "markRead",
+          "componentType": "connector",
+          "simulationStrategy": "Static",
+          "mockValue": {
+            "response": {
+              "id": "eval-message-id",
+              "success": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "selectedEntrypoint": "start",
+  "fileName": "evaluation-set-refunds-e3ef5e62.json",
+  "createdAt": "2026-11-21T05:47:23.473Z",
+  "updatedAt": "2026-11-21T05:50:03.956Z",
+  "target": {
+    "kind": "flow",
+    "entrypoint": "start"
+  },
+  "nodeEval": false,
+  "schemaVersion": 4
+}

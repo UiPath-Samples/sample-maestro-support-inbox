@@ -1,0 +1,30 @@
+{
+  "id": "E39",
+  "received": "2026-11-13T08:22:00-05:00",
+  "from": {
+    "name": "Maya Okafor",
+    "email": "maya@brightloaf.example"
+  },
+  "subject": "Help",
+  "body": "Getting this every time I deploy. Screenshot attached.\n\nMaya",
+  "attachments": [
+    {
+      "file": "tickets/E39/Screenshot 2026-11-13 at 8.21.47 AM.png",
+      "kind": "screenshot",
+      "content_type": "image/png"
+    }
+  ],
+  "expected": {
+    "category": "bug",
+    "account_id": "FW-10015",
+    "amount": null,
+    "error_code": "E2210",
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "references error E2210 BUILD_OOM",
+      "addresses the 2,048 MB build memory limit"
+    ],
+    "policy_points": []
+  }
+}

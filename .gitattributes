@@ -1,0 +1,13 @@
+# Normalize text files to LF in the repo
+* text=auto
+
+# Fixture attachments are sent as email attachments and must stay byte-identical on every OS
+fixtures/tickets/** binary
+fixtures/tickets/*/ticket.json text diff merge
+
+# Binary formats
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

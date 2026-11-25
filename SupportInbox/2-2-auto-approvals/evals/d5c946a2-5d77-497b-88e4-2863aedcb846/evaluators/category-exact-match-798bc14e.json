@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "id": "category-exact-match-798bc14e",
+  "name": "Category exact match",
+  "description": "Exact match of the category output against expected.category",
+  "evaluatorTypeId": "uipath-exact-match",
+  "evaluatorConfig": {
+    "name": "Category exact match",
+    "caseSensitive": false,
+    "negated": false,
+    "targetOutputKey": "category"
+  },
+  "fileName": "category-exact-match-798bc14e.json",
+  "createdAt": "2026-11-21T05:47:13.631Z",
+  "updatedAt": "2026-11-21T05:47:13.631Z"
+}

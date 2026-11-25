@@ -1,0 +1,107 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "connection",
+      "key": "593b14fc-f445-4c6a-89b7-016833566cab",
+      "id": "connection593b14fc-f445-4c6a-89b7-016833566cab",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "593b14fc-f445-4c6a-89b7-016833566cab",
+          "isExpression": false,
+          "displayName": "uipath-google-gmail connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "getEmail",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-google-gmail connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-google-gmail"
+      }
+    },
+    {
+      "resource": "connection",
+      "key": "3a1fd879-252e-4f03-a20d-1a5a5ee539ef",
+      "id": "connection3a1fd879-252e-4f03-a20d-1a5a5ee539ef",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "3a1fd879-252e-4f03-a20d-1a5a5ee539ef",
+          "isExpression": false,
+          "displayName": "uipath-atlassian-jira connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "ticketBilling",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-atlassian-jira connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-atlassian-jira"
+      }
+    },
+    {
+      "resource": "connection",
+      "key": "5ad1820c-70e9-4750-b25e-e2cd028b6c7f",
+      "id": "connection5ad1820c-70e9-4750-b25e-e2cd028b6c7f",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "5ad1820c-70e9-4750-b25e-e2cd028b6c7f",
+          "isExpression": false,
+          "displayName": "uipath-salesforce-slack connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "postSlack",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-salesforce-slack connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-salesforce-slack"
+      }
+    },
+    {
+      "resource": "EventTrigger",
+      "key": "593b14fc-f445-4c6a-89b7-016833566cab_4e9714a8-66e8-4555-af90-db0a656b12c7",
+      "id": "EventTrigger593b14fc-f445-4c6a-89b7-016833566cab_4e9714a8-66e8-4555-af90-db0a656b12c7",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "593b14fc-f445-4c6a-89b7-016833566cab",
+          "isExpression": false
+        },
+        "EntryPointUniqueId": {
+          "defaultValue": "4e9714a8-66e8-4555-af90-db0a656b12c7",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "Connector": "uipath-google-gmail",
+        "ActivityName": "Email received (INBOX)",
+        "BindingsVersion": "2.2",
+        "ObjectName": "Message",
+        "Operation": "EMAIL_RECEIVED",
+        "FilterExpression": "(ParentFolders[?ID=='INBOX']) && ((To[?contains(Email,'+step12@')]))"
+      }
+    },
+    {
+      "resource": "Property",
+      "key": "emailReceivedInbox1_4e9714a8-66e8-4555-af90-db0a656b12c7",
+      "value": {
+        "ParentFolders[*].ID": {
+          "defaultValue": "INBOX",
+          "isExpression": false
+        }
+      },
+      "activityDisplayName": "connector-activity",
+      "metadata": {
+        "ActivityName": "Email received (INBOX)",
+        "BindingsVersion": "2.2",
+        "ObjectName": "Message",
+        "Operation": "EMAIL_RECEIVED",
+        "ParentResourceKey": "EventTrigger.593b14fc-f445-4c6a-89b7-016833566cab_4e9714a8-66e8-4555-af90-db0a656b12c7",
+        "TriggerCreateParameters": "ParentFolders[*].ID",
+        "DebugQueryParameters": "ParentFolders[*].ID"
+      },
+      "id": "Property_4e9714a8-66e8-4555-af90-db0a656b12c7"
+    }
+  ]
+}

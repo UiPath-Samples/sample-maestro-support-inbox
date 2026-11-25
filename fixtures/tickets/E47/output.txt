@@ -1,0 +1,11 @@
+$ fernway deploy --debug
+DEBUG fernway-cli 3.4.1 (windows-x64)
+DEBUG config: C:\Users\lena\.fernway\config.json
+DEBUG account: FW-10021 (Tessellate Games)
+DEBUG app: tessellate-web
+DEBUG token: fwt_****9c2e (expires 2026-11-02T00:00:00Z)
+DEBUG POST https://api.fernway.example/v2/apps/tessellate-web/deployments
+DEBUG <- 401 Unauthorized (118ms)
+DEBUG <- {"error":"E4011 TOKEN_EXPIRED","message":"API token expired"}
+Error: E4011 TOKEN_EXPIRED: your API token expired on 2026-11-02.
+Run `fernway login` or create a new token in Settings > API tokens.

@@ -1,0 +1,33 @@
+{
+  "id": "E05",
+  "received": "2026-11-11T11:20:00-05:00",
+  "from": {
+    "name": "Felix Moreau",
+    "email": "felix@pixelmoss.example"
+  },
+  "subject": "Please waive bandwidth overage",
+  "body": "Hi Fernway team,\n\nOne of our posts went viral in October and our November invoice has a $120 bandwidth overage on top of the plan. That's more than the plan itself. Can you waive it? Account FW-10045.\n\nThanks,\nFelix",
+  "attachments": [],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10045",
+    "amount": 120.0,
+    "error_code": null,
+    "refund": {
+      "requested": true,
+      "amount": 120.0,
+      "eligible": false,
+      "route": "decline",
+      "reason": "overage from customer traffic is not refundable"
+    },
+    "injection": false,
+    "reply_points": [
+      "acknowledges the $120 bandwidth overage",
+      "references account FW-10045"
+    ],
+    "policy_points": [
+      "declines the refund because traffic overages are not refundable",
+      "suggests a spend cap or usage alerts"
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "version": "1.2.0",
+  "settings": {
+    "model": "claude-sonnet-5-5",
+    "maxTokens": 16384,
+    "temperature": 1,
+    "engine": "basic-v2",
+    "maxIterations": 25,
+    "mode": "standard"
+  },
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "getEmail__output__From__Name": {
+        "type": "string"
+      },
+      "getEmail__output__From__Email": {
+        "type": "string"
+      },
+      "getEmail__output__Subject": {
+        "type": "string"
+      },
+      "getEmail__output__Body": {
+        "type": "string"
+      },
+      "prepareFiles__output__attachmentList": {
+        "type": "string"
+      },
+      "prepareFiles__output__attachments": {
+        "type": "array",
+        "items": {}
+      },
+      "prepareFiles__output__otherAttachments": {
+        "type": "string"
+      }
+    }
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "replyText": {
+        "type": "string"
+      },
+      "refundRequested": {
+        "type": "boolean"
+      },
+      "accountId": {
+        "type": "string"
+      },
+      "amount": {
+        "type": "string"
+      },
+      "errorCode": {
+        "type": "string"
+      }
+    }
+  },
+  "metadata": {
+    "storageVersion": "50.0.0",
+    "isConversational": false,
+    "showProjectCreationExperience": false
+  },
+  "type": "lowCode",
+  "guardrails": [],
+  "messages": [
+    {
+      "role": "system",
+      "content": "You triage emails sent to a software company's customer support inbox.\nUse the sender, subject and body you are given, and the email's PDF and image attachments when it has any.\n\nAttachments: the user message lists each PDF or image attachment with its ID, FullName and MimeType. When that list is not \"(none)\", call the Analyze Files tool on those attachments, passing each attachment's ID exactly as it is listed, and read them to extract the customer's account ID, the amount (with its currency) and any error code. Never make up an attachment ID, and do not call the tool when the list is \"(none)\". Other attachments are listed by name only and are not read.\nUse what you extract, together with the email itself, to decide the category and to write the reply. For example, an invoice or receipt that shows a charge points to billing, and a screenshot that shows an error code points to bug.\n\nReturn a result conforming to the output schema:\n- category: exactly one of billing | bug | how-to | other | spam.\n  billing = charges, invoices, refunds, plans, payment. bug = the product is broken or behaves wrongly.\n  how-to = the customer asks how to do something with the product. spam = unsolicited marketing, phishing, scams or mail not meant for support.\n  other = a genuine customer email that fits none of the above.\n- summary: one or two sentences for the support team describing what the customer wants. Include the account ID, amount and error code you found, when there are any.\n- replyText: a short, polite reply to the customer, signed 'Support team'. Acknowledge the request and say what happens next. When you found an account ID, amount or error code, refer to it so the customer knows it was read. Do not promise refunds, credits or fixes. For spam, return an empty string.\n- refundRequested: true if the customer asks for a refund or their money back, or disputes a charge and asks us to fix it (for example a duplicate charge, a charge after cancelling, or a charge they say is wrong), even when they don't use the word refund; otherwise false. A question that only asks us to explain a charge is not a refund request.\n- accountId: the customer's account ID from the email or its attachments, or an empty string if there is none.\n- amount: the amount from the email or its attachments, with its currency, or an empty string if there is none.\n- errorCode: the error code from the email or its attachments, or an empty string if there is none.",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "You triage emails sent to a software company's customer support inbox.\nUse the sender, subject and body you are given, and the email's PDF and image attachments when it has any.\n\nAttachments: the user message lists each PDF or image attachment with its ID, FullName and MimeType. When that list is not \"(none)\", call the Analyze Files tool on those attachments, passing each attachment's ID exactly as it is listed, and read them to extract the customer's account ID, the amount (with its currency) and any error code. Never make up an attachment ID, and do not call the tool when the list is \"(none)\". Other attachments are listed by name only and are not read.\nUse what you extract, together with the email itself, to decide the category and to write the reply. For example, an invoice or receipt that shows a charge points to billing, and a screenshot that shows an error code points to bug.\n\nReturn a result conforming to the output schema:\n- category: exactly one of billing | bug | how-to | other | spam.\n  billing = charges, invoices, refunds, plans, payment. bug = the product is broken or behaves wrongly.\n  how-to = the customer asks how to do something with the product. spam = unsolicited marketing, phishing, scams or mail not meant for support.\n  other = a genuine customer email that fits none of the above.\n- summary: one or two sentences for the support team describing what the customer wants. Include the account ID, amount and error code you found, when there are any.\n- replyText: a short, polite reply to the customer, signed 'Support team'. Acknowledge the request and say what happens next. When you found an account ID, amount or error code, refer to it so the customer knows it was read. Do not promise refunds, credits or fixes. For spam, return an empty string.\n- refundRequested: true if the customer asks for a refund or their money back, or disputes a charge and asks us to fix it (for example a duplicate charge, a charge after cancelling, or a charge they say is wrong), even when they don't use the word refund; otherwise false. A question that only asks us to explain a charge is not a refund request.\n- accountId: the customer's account ID from the email or its attachments, or an empty string if there is none.\n- amount: the amount from the email or its attachments, with its currency, or an empty string if there is none.\n- errorCode: the error code from the email or its attachments, or an empty string if there is none."
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "From: {{input.getEmail__output__From__Name}} <{{input.getEmail__output__From__Email}}>\nSubject: {{input.getEmail__output__Subject}}\n\n{{input.getEmail__output__Body}}\n\nPDF and image attachments to read with the Analyze Files tool (ID, FullName, MimeType):\n{{input.prepareFiles__output__attachmentList}}\n\nAttachment files: {{input.prepareFiles__output__attachments}}\n\nOther attachments (not read): {{input.prepareFiles__output__otherAttachments}}",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "From: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__From__Name"
+        },
+        {
+          "type": "simpleText",
+          "rawString": " <"
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__From__Email"
+        },
+        {
+          "type": "simpleText",
+          "rawString": ">\nSubject: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__Subject"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\n\n"
+        },
+        {
+          "type": "variable",
+          "rawString": "input.getEmail__output__Body"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\n\nPDF and image attachments to read with the Analyze Files tool (ID, FullName, MimeType):\n"
+        },
+        {
+          "type": "variable",
+          "rawString": "input.prepareFiles__output__attachmentList"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\n\nAttachment files: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.prepareFiles__output__attachments"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\n\nOther attachments (not read): "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.prepareFiles__output__otherAttachments"
+        }
+      ]
+    }
+  ],
+  "projectId": "faf922bd-1449-46b0-8128-6f4035676024",
+  "id": "faf922bd-1449-46b0-8128-6f4035676024",
+  "name": "classify"
+}

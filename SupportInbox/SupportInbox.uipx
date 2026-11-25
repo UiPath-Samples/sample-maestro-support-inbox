@@ -1,0 +1,27 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.10.0",
+  "SolutionId": "2854609e-f3d1-4a65-1db4-08df46f5e792",
+  "Projects": [
+    {
+      "Type": "Flow",
+      "ProjectRelativePath": "1-1-build/project.uiproj",
+      "Id": "bc0dbfad-eb01-419e-b909-168cb910e4ba"
+    },
+    {
+      "Type": "Flow",
+      "ProjectRelativePath": "1-2-build-evals/project.uiproj",
+      "Id": "ca30c8b0-33b0-4812-b1ba-7eb07f3e681b"
+    },
+    {
+      "Type": "Flow",
+      "ProjectRelativePath": "2-1-fix/project.uiproj",
+      "Id": "51636d4d-76c0-4ee8-9da8-08422c6e93ca"
+    },
+    {
+      "Type": "Flow",
+      "ProjectRelativePath": "2-2-auto-approvals/project.uiproj",
+      "Id": "e66c468b-d7fe-4b05-9bf4-01919ac9e4dd"
+    }
+  ]
+}

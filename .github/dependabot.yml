@@ -1,0 +1,13 @@
+# Keeps GitHub Actions in this repo up to date.
+# If the sample adds a package manifest (package.json, requirements.txt, *.csproj, etc.),
+# add a matching entry here. Supported ecosystems:
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    labels:
+      - dependencies
+      - github-actions

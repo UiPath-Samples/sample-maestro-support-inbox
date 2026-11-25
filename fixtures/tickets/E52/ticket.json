@@ -1,0 +1,21 @@
+{
+  "id": "E52",
+  "received": "2026-11-17T07:15:00-05:00",
+  "from": {
+    "name": "Uptimely Alerts",
+    "email": "no-reply@uptimely.example"
+  },
+  "subject": "[Uptimely] Monitor recovered: status page",
+  "body": "Your monitor \"status page\" is UP again after 2 minutes of downtime.\n\nThis is an automated message from Uptimely. Do not reply to this email.",
+  "attachments": [],
+  "expected": {
+    "category": "spam",
+    "account_id": null,
+    "amount": null,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [],
+    "policy_points": []
+  }
+}

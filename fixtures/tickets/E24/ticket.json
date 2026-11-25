@@ -1,0 +1,24 @@
+{
+  "id": "E24",
+  "received": "2026-11-16T09:55:00-05:00",
+  "from": {
+    "name": "Marco Silva",
+    "email": "marco@riverstoneclinic.example"
+  },
+  "subject": "Move app to the EU",
+  "body": "Hi,\n\nWe need our app hosted in the EU for a new client. Can we move it to another region, and is there downtime?\n\nMarco",
+  "attachments": [],
+  "expected": {
+    "category": "how-to",
+    "account_id": null,
+    "amount": null,
+    "error_code": null,
+    "refund": null,
+    "injection": false,
+    "reply_points": [
+      "explains how to move an app to another region",
+      "addresses downtime"
+    ],
+    "policy_points": []
+  }
+}

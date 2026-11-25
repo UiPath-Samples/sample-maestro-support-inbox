@@ -1,0 +1,38 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "2-1-fix",
+    "kind": "process",
+    "type": "flow",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "51636d4d-76c0-4ee8-9da8-08422c6e93ca",
+    "dependencies": [
+      {
+        "kind": "package",
+        "name": "2-1-fix"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "runtimeProfile": "Standard",
+      "type": "Flow",
+      "name": "2-1-fix",
+      "package": {
+        "key": "3d6c8f96-af45-4cb3-9b2f-cb059f728f9f"
+      },
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180
+    },
+    "locks": [],
+    "key": "cf95962b-6fcc-43b6-8ddc-b53168eb2001",
+    "files": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "2-1-fix",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "51636d4d-76c0-4ee8-9da8-08422c6e93ca",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "2-1-fix"
+    },
+    "locks": [],
+    "key": "3d6c8f96-af45-4cb3-9b2f-cb059f728f9f",
+    "files": []
+  }
+}

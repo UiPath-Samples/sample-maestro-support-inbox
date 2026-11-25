@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "id": "refund-decision-b0ae51ca",
+  "name": "Refund decision",
+  "description": "LLM judge: does the workflow output state the expected refund route and reason",
+  "evaluatorTypeId": "uipath-llm-judge-output-semantic-similarity",
+  "evaluatorConfig": {
+    "name": "Refund decision",
+    "prompt": "You are grading a support workflow's refund decision. ExpectedOutput gives the expected refund route (auto_approve, human_approval or decline) and the reason. ActualOutput is the whole workflow output. Score 100 only when the actual output explicitly states the same refund route (an equivalent wording is fine) and a reason consistent with the expected reason. Score 50 when the route matches but the reason is missing or different. Score 0 when the route is missing, different, or the output makes no refund decision at all (a refundRequested flag alone is not a decision). The route must be stated as a decision: a reply that only says a team will review or look into the request is not a human_approval decision, and scores 0. Give the score and a short justification.\n----\nExpectedOutput:\n{{ExpectedOutput}}\n----\nActualOutput:\n{{ActualOutput}}\n",
+    "temperature": 0,
+    "maxTokens": 8192,
+    "targetOutputKey": "*",
+    "model": "gpt-4.1-2025-04-14"
+  },
+  "fileName": "refund-decision-b0ae51ca.json",
+  "createdAt": "2026-11-21T05:47:16.708Z",
+  "updatedAt": "2026-11-21T05:47:16.708Z"
+}

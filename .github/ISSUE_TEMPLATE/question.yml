@@ -1,0 +1,33 @@
+name: "❓ Question"
+description: Ask a question about this sample or the tutorial steps
+title: "(your question in one line)"
+labels: [question, needs-triage]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For general UiPath product questions, the [UiPath Community Forum](https://forum.uipath.com/) will usually get you a faster answer.
+        Use this template for questions specific to the code in this repo or the tutorial it supports.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried so far?
+    validations:
+      required: false
+
+  - type: input
+    id: step
+    attributes:
+      label: Tutorial step
+      description: Which step in the tutorial are you on, if applicable?
+    validations:
+      required: false

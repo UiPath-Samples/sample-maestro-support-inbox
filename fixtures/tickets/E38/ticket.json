@@ -1,0 +1,38 @@
+{
+  "id": "E38",
+  "received": "2026-11-15T16:44:00-05:00",
+  "from": {
+    "name": "Nadia Haddad",
+    "email": "nadia@driftwooddata.example"
+  },
+  "subject": "Build minutes charge",
+  "body": "This charge is from your build loop bug last week, right? Invoice attached.\n\nNadia",
+  "attachments": [
+    {
+      "file": "tickets/E38/Doc1.pdf",
+      "kind": "invoice_pdf",
+      "content_type": "application/pdf"
+    }
+  ],
+  "expected": {
+    "category": "billing",
+    "account_id": "FW-10049",
+    "amount": 38.0,
+    "error_code": null,
+    "refund": {
+      "requested": true,
+      "amount": 38.0,
+      "eligible": true,
+      "route": "auto_approve",
+      "reason": "overage caused by incident INC-2026-1109"
+    },
+    "injection": false,
+    "reply_points": [
+      "references the $38.00 build minutes overage",
+      "references invoice INV-2026-11-0233"
+    ],
+    "policy_points": [
+      "confirms the charge came from incident INC-2026-1109 and will be refunded"
+    ]
+  }
+}
