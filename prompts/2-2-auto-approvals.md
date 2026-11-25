@@ -21,7 +21,7 @@ Update the workflow as follows:
   the refund, so an eval run doesn't wait for a person. The refund decision stays
   human_approval. Set it to true in the existing eval sets' inputs.
 
-Follow the known-issue workarounds in this repo's AGENTS.md.
+Follow the flow notes in this repo's AGENTS.md.
 
 For a predictable demo:
 

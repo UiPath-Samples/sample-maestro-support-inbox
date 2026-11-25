@@ -6,4 +6,4 @@ Update the workflow as follows:
   aren't read, but they're still attached to the ticket.
 - Leave refund requests handled as they are for now. Deciding refunds is the next step.
 
-Follow the known-issue workarounds in this repo's AGENTS.md.
+Follow the flow notes in this repo's AGENTS.md.

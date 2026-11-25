@@ -7,7 +7,7 @@ spam waits in Jira for a weekly review. Finish by marking the email as read. Ret
 category, the reply text and whether the customer asked for a refund as the workflow's
 outputs, so we can evaluate it.
 
-Follow the known-issue workarounds in this repo's AGENTS.md.
+Follow the flow notes in this repo's AGENTS.md.
 
 Guidance for a faster, more predictable build (optional; without it the build takes longer
 and varies more):

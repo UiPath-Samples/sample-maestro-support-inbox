@@ -32,13 +32,14 @@ If you were started in `start-here/`, or asked to build what one of the prompts 
 When you're maintaining the repo itself (fixtures, prompts, docs), these limits don't apply. To add a step or copy a checkpoint
 in `SupportInbox/`, follow [MAINTAINING.md](MAINTAINING.md).
 
-## Known issues in the Flow tooling
+## Notes for building flows
 
-These apply to every flow in this repo, whichever folder you're working in. They work around
-issues in the Flow tooling and are needed until those are fixed. Without them the flow
-validates, but the Gmail trigger never fires and attachments can't be downloaded.
+These apply to every flow in this repo, whichever folder you're working in. Follow all of
+them. Some reflect how the current Flow tooling behaves and may change in later versions.
+Without them the flow validates, but the Gmail trigger never fires and attachments can't be
+downloaded.
 
-These workarounds, and the eval notes below, were tested with `uip` 1.206.0 and
+These notes and the eval notes below were tested with `uip` 1.206.0 and
 `@uipath/maestro-builder-sdk` 6.117.1. On a later version, apply them anyway, and tell the user
 if one of them no longer matches what the tooling does.
 
@@ -70,7 +71,7 @@ if one of them no longer matches what the tooling does.
   quotes from JSON arguments, so commands that take JSON (node configure, eval data points,
   debug inputs) fail or receive mangled values.
 
-## Known issues in Flow evals
+## Notes for building evals
 
 These apply when you build evals for a flow in this repo. Without them the eval sets look
 fine, but the runs fail or every step reads an empty output.
