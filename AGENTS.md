@@ -38,6 +38,10 @@ These apply to every flow in this repo, whichever folder you're working in. They
 issues in the Flow tooling and are needed until those are fixed. Without them the flow
 validates, but the Gmail trigger never fires and attachments can't be downloaded.
 
+These workarounds, and the eval notes below, were tested with `uip` 1.206.0 and
+`@uipath/maestro-builder-sdk` 6.117.1. On a later version, apply them anyway, and tell the user
+if one of them no longer matches what the tooling does.
+
 - Add the Gmail email trigger and the attachment download step with
   `uip maestro flow node add` and `uip maestro flow node configure`, not in SDK source.
 - Set the trigger's folder to INBOX: `"eventParameters": {"ParentFolders[*].ID": "INBOX"}`.
